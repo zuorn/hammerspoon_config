@@ -1,0 +1,119 @@
+[
+  {
+    "Constant" : [
+
+    ],
+    "submodules" : [
+
+    ],
+    "Function" : [
+
+    ],
+    "Variable" : [
+
+    ],
+    "stripped_doc" : [
+
+    ],
+    "Deprecated" : [
+
+    ],
+    "desc" : "Keybindings cheatsheet for current application",
+    "type" : "Module",
+    "Constructor" : [
+
+    ],
+    "doc" : "Keybindings cheatsheet for current application\n\nDownload: [https:\/\/github.com\/Hammerspoon\/Spoons\/raw\/master\/Spoons\/KSheet.spoon.zip](https:\/\/github.com\/Hammerspoon\/Spoons\/raw\/master\/Spoons\/KSheet.spoon.zip)",
+    "Method" : [
+      {
+        "doc" : "Show current application's keybindings in a webview",
+        "desc" : "Show current application's keybindings in a webview",
+        "parameters" : [
+
+        ],
+        "stripped_doc" : [
+          "Show current application's keybindings in a webview"
+        ],
+        "notes" : [
+
+        ],
+        "signature" : "KSheet:show()",
+        "type" : "Method",
+        "returns" : [
+
+        ],
+        "name" : "show",
+        "def" : "KSheet:show()"
+      },
+      {
+        "doc" : "Hide the cheatsheet webview",
+        "desc" : "Hide the cheatsheet webview",
+        "parameters" : [
+
+        ],
+        "stripped_doc" : [
+          "Hide the cheatsheet webview"
+        ],
+        "notes" : [
+
+        ],
+        "signature" : "KSheet:hide()",
+        "type" : "Method",
+        "returns" : [
+
+        ],
+        "name" : "hide",
+        "def" : "KSheet:hide()"
+      }
+    ],
+    "Command" : [
+
+    ],
+    "Field" : [
+
+    ],
+    "items" : [
+      {
+        "doc" : "Hide the cheatsheet webview",
+        "desc" : "Hide the cheatsheet webview",
+        "parameters" : [
+
+        ],
+        "stripped_doc" : [
+          "Hide the cheatsheet webview"
+        ],
+        "notes" : [
+
+        ],
+        "signature" : "KSheet:hide()",
+        "type" : "Method",
+        "returns" : [
+
+        ],
+        "name" : "hide",
+        "def" : "KSheet:hide()"
+      },
+      {
+        "doc" : "Show current application's keybindings in a webview",
+        "desc" : "Show current application's keybindings in a webview",
+        "parameters" : [
+
+        ],
+        "stripped_doc" : [
+          "Show current application's keybindings in a webview"
+        ],
+        "notes" : [
+
+        ],
+        "signature" : "KSheet:show()",
+        "type" : "Method",
+        "returns" : [
+
+        ],
+        "name" : "show",
+        "def" : "KSheet:show()"
+      }
+    ],
+    "name" : "KSheet"
+  }
+]

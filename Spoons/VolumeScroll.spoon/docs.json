@@ -1,0 +1,255 @@
+[
+  {
+    "Constant" : [
+
+    ],
+    "submodules" : [
+
+    ],
+    "Function" : [
+
+    ],
+    "Variable" : [
+
+    ],
+    "stripped_doc" : [
+
+    ],
+    "Deprecated" : [
+
+    ],
+    "type" : "Module",
+    "desc" : "Use mouse scroll wheel and modifiers to adjust volume.",
+    "Constructor" : [
+
+    ],
+    "doc" : "Use mouse scroll wheel and modifiers to adjust volume.\n\nDownload: [https:\/\/github.com\/Hammerspoon\/Spoons\/raw\/master\/Spoons\/VolumeScroll.spoon.zip](https:\/\/github.com\/Hammerspoon\/Spoons\/raw\/master\/Spoons\/VolumeScroll.spoon.zip)",
+    "Method" : [
+      {
+        "doc" : "Initialize spoon\n\nParameters:\n\nReturns:\n * void",
+        "parameters" : [
+          ""
+        ],
+        "desc" : "Initialize spoon",
+        "stripped_doc" : [
+          "Initialize spoon",
+          ""
+        ],
+        "notes" : [
+
+        ],
+        "signature" : "VolumeScroll:init()",
+        "type" : "Method",
+        "returns" : [
+          " * void"
+        ],
+        "def" : "VolumeScroll:init()",
+        "name" : "init"
+      },
+      {
+        "doc" : "Start event watcher.\n\nParameters:\n * mods - a table containing the modifiers to bind in scrolling\n\nReturns:\n * void",
+        "parameters" : [
+          " * mods - a table containing the modifiers to bind in scrolling",
+          ""
+        ],
+        "desc" : "Start event watcher.",
+        "stripped_doc" : [
+          "Start event watcher.",
+          ""
+        ],
+        "notes" : [
+
+        ],
+        "signature" : "VolumeScroll:start()",
+        "type" : "Method",
+        "returns" : [
+          " * void"
+        ],
+        "def" : "VolumeScroll:start()",
+        "name" : "start"
+      },
+      {
+        "doc" : "Stop the scroll watcher\n\nParameters:\n\nReturns:\n * void",
+        "parameters" : [
+          ""
+        ],
+        "desc" : "Stop the scroll watcher",
+        "stripped_doc" : [
+          "Stop the scroll watcher",
+          ""
+        ],
+        "notes" : [
+
+        ],
+        "signature" : "VolumeScroll:stop()",
+        "type" : "Method",
+        "returns" : [
+          " * void"
+        ],
+        "def" : "VolumeScroll:stop()",
+        "name" : "stop"
+      },
+      {
+        "doc" : "Determine if a table of modifiers are the same modifiers passed into :start()\n\nParameters:\n * mods - a table of modifiers\n\nReturns:\n * boolean - true if mods are same, false otherwise",
+        "parameters" : [
+          " * mods - a table of modifiers",
+          ""
+        ],
+        "desc" : "Determine if a table of modifiers are the same modifiers passed into :start()",
+        "stripped_doc" : [
+          "Determine if a table of modifiers are the same modifiers passed into :start()",
+          ""
+        ],
+        "notes" : [
+
+        ],
+        "signature" : "VolumeScroll:sameMods()",
+        "type" : "Method",
+        "returns" : [
+          " * boolean - true if mods are same, false otherwise"
+        ],
+        "def" : "VolumeScroll:sameMods()",
+        "name" : "sameMods"
+      },
+      {
+        "doc" : "Determine the number of items in a table\n\nParameters:\n * T - a table\n\nReturns:\n * number or boolean - the number of items in the table, false if T is not a table",
+        "parameters" : [
+          " * T - a table",
+          ""
+        ],
+        "desc" : "Determine the number of items in a table",
+        "stripped_doc" : [
+          "Determine the number of items in a table",
+          ""
+        ],
+        "notes" : [
+
+        ],
+        "signature" : "VolumeScroll:tableLength(T)",
+        "type" : "Method",
+        "returns" : [
+          " * number or boolean - the number of items in the table, false if T is not a table"
+        ],
+        "def" : "VolumeScroll:tableLength(T)",
+        "name" : "tableLength"
+      }
+    ],
+    "Field" : [
+
+    ],
+    "items" : [
+      {
+        "doc" : "Initialize spoon\n\nParameters:\n\nReturns:\n * void",
+        "parameters" : [
+          ""
+        ],
+        "desc" : "Initialize spoon",
+        "stripped_doc" : [
+          "Initialize spoon",
+          ""
+        ],
+        "notes" : [
+
+        ],
+        "signature" : "VolumeScroll:init()",
+        "type" : "Method",
+        "returns" : [
+          " * void"
+        ],
+        "def" : "VolumeScroll:init()",
+        "name" : "init"
+      },
+      {
+        "doc" : "Determine if a table of modifiers are the same modifiers passed into :start()\n\nParameters:\n * mods - a table of modifiers\n\nReturns:\n * boolean - true if mods are same, false otherwise",
+        "parameters" : [
+          " * mods - a table of modifiers",
+          ""
+        ],
+        "desc" : "Determine if a table of modifiers are the same modifiers passed into :start()",
+        "stripped_doc" : [
+          "Determine if a table of modifiers are the same modifiers passed into :start()",
+          ""
+        ],
+        "notes" : [
+
+        ],
+        "signature" : "VolumeScroll:sameMods()",
+        "type" : "Method",
+        "returns" : [
+          " * boolean - true if mods are same, false otherwise"
+        ],
+        "def" : "VolumeScroll:sameMods()",
+        "name" : "sameMods"
+      },
+      {
+        "doc" : "Start event watcher.\n\nParameters:\n * mods - a table containing the modifiers to bind in scrolling\n\nReturns:\n * void",
+        "parameters" : [
+          " * mods - a table containing the modifiers to bind in scrolling",
+          ""
+        ],
+        "desc" : "Start event watcher.",
+        "stripped_doc" : [
+          "Start event watcher.",
+          ""
+        ],
+        "notes" : [
+
+        ],
+        "signature" : "VolumeScroll:start()",
+        "type" : "Method",
+        "returns" : [
+          " * void"
+        ],
+        "def" : "VolumeScroll:start()",
+        "name" : "start"
+      },
+      {
+        "doc" : "Stop the scroll watcher\n\nParameters:\n\nReturns:\n * void",
+        "parameters" : [
+          ""
+        ],
+        "desc" : "Stop the scroll watcher",
+        "stripped_doc" : [
+          "Stop the scroll watcher",
+          ""
+        ],
+        "notes" : [
+
+        ],
+        "signature" : "VolumeScroll:stop()",
+        "type" : "Method",
+        "returns" : [
+          " * void"
+        ],
+        "def" : "VolumeScroll:stop()",
+        "name" : "stop"
+      },
+      {
+        "doc" : "Determine the number of items in a table\n\nParameters:\n * T - a table\n\nReturns:\n * number or boolean - the number of items in the table, false if T is not a table",
+        "parameters" : [
+          " * T - a table",
+          ""
+        ],
+        "desc" : "Determine the number of items in a table",
+        "stripped_doc" : [
+          "Determine the number of items in a table",
+          ""
+        ],
+        "notes" : [
+
+        ],
+        "signature" : "VolumeScroll:tableLength(T)",
+        "type" : "Method",
+        "returns" : [
+          " * number or boolean - the number of items in the table, false if T is not a table"
+        ],
+        "def" : "VolumeScroll:tableLength(T)",
+        "name" : "tableLength"
+      }
+    ],
+    "Command" : [
+
+    ],
+    "name" : "VolumeScroll"
+  }
+]
