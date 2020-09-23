@@ -37,7 +37,7 @@ cd ~/.hammerspoon && git pull
 
 ### 窗口管理模式
 按下前缀键 `Option` + `R` 进入窗口管理模式：
- 
+
 * 使用 `h、j、k、l` 移动为上下左右的半屏
 * 使用 ` y、u、i、o`（即 hjkl 上方按键）移动为左上/左下/右上/右下的四分之一窗口
 * 使用 `c` 居中，按下 `=、-` 进行窗口大小缩放
@@ -52,8 +52,10 @@ cd ~/.hammerspoon && git pull
 
 ![](http://ww4.sinaimg.cn/large/006tNc79ly1g4pz9dhogwj31c00u04aw.jpg) 
 
+注：如设置程序坞自动隐藏请修改  `/Users/zuorn/.hammerspoon/Spoons/WinWin.spoon/init.lua.bak` 为`init.lua`
 
 ### 应用快速切换
+
 按下前缀键 `Option` + `tab` 显示窗口提示，按下对应应用显示的字母快速切换。
 ![快速切换](https://i.loli.net/2019/07/06/5d20193818dd473100.png)
 
