@@ -12,13 +12,11 @@
     "Variable" : [
       {
         "def" : "WinWin.gridparts",
+        "doc" : "An integer specifying how many gridparts the screen should be divided into. Defaults to 30.",
+        "desc" : "An integer specifying how many gridparts the screen should be divided into. Defaults to 30.",
         "stripped_doc" : [
           "An integer specifying how many gridparts the screen should be divided into. Defaults to 30."
         ],
-        "parameters" : [
-
-        ],
-        "doc" : "An integer specifying how many gridparts the screen should be divided into. Defaults to 30.",
         "notes" : [
 
         ],
@@ -28,7 +26,9 @@
 
         ],
         "name" : "gridparts",
-        "desc" : "An integer specifying how many gridparts the screen should be divided into. Defaults to 30."
+        "parameters" : [
+
+        ]
       }
     ],
     "stripped_doc" : [
@@ -48,14 +48,12 @@
     "Method" : [
       {
         "def" : "WinWin:stepMove(direction)",
+        "doc" : "Move the focused window in the `direction` by on step. The step scale equals to the width\/height of one gridpart.\n\nParameters:\n * direction - A string specifying the direction, valid strings are: `left`, `right`, `up`, `down`.",
+        "desc" : "Move the focused window in the `direction` by on step. The step scale equals to the width\/height of one gridpart.",
         "stripped_doc" : [
           "Move the focused window in the `direction` by on step. The step scale equals to the width\/height of one gridpart.",
           ""
         ],
-        "parameters" : [
-          " * direction - A string specifying the direction, valid strings are: `left`, `right`, `up`, `down`."
-        ],
-        "doc" : "Move the focused window in the `direction` by on step. The step scale equals to the width\/height of one gridpart.\n\nParameters:\n * direction - A string specifying the direction, valid strings are: `left`, `right`, `up`, `down`.",
         "notes" : [
 
         ],
@@ -65,18 +63,18 @@
 
         ],
         "name" : "stepMove",
-        "desc" : "Move the focused window in the `direction` by on step. The step scale equals to the width\/height of one gridpart."
+        "parameters" : [
+          " * direction - A string specifying the direction, valid strings are: `left`, `right`, `up`, `down`."
+        ]
       },
       {
         "def" : "WinWin:stepResize(direction)",
+        "doc" : "Resize the focused window in the `direction` by on step.\n\nParameters:\n * direction - A string specifying the direction, valid strings are: `left`, `right`, `up`, `down`.",
+        "desc" : "Resize the focused window in the `direction` by on step.",
         "stripped_doc" : [
           "Resize the focused window in the `direction` by on step.",
           ""
         ],
-        "parameters" : [
-          " * direction - A string specifying the direction, valid strings are: `left`, `right`, `up`, `down`."
-        ],
-        "doc" : "Resize the focused window in the `direction` by on step.\n\nParameters:\n * direction - A string specifying the direction, valid strings are: `left`, `right`, `up`, `down`.",
         "notes" : [
 
         ],
@@ -86,17 +84,17 @@
 
         ],
         "name" : "stepResize",
-        "desc" : "Resize the focused window in the `direction` by on step."
+        "parameters" : [
+          " * direction - A string specifying the direction, valid strings are: `left`, `right`, `up`, `down`."
+        ]
       },
       {
         "def" : "WinWin:stash()",
+        "doc" : "Stash current windows's position and size.",
+        "desc" : "Stash current windows's position and size.",
         "stripped_doc" : [
           "Stash current windows's position and size."
         ],
-        "parameters" : [
-
-        ],
-        "doc" : "Stash current windows's position and size.",
         "notes" : [
 
         ],
@@ -106,18 +104,18 @@
 
         ],
         "name" : "stash",
-        "desc" : "Stash current windows's position and size."
+        "parameters" : [
+
+        ]
       },
       {
         "def" : "WinWin:moveAndResize(option)",
+        "doc" : "Move and resize the focused window.\n\nParameters:\n * option - A string specifying the option, valid strings are: `halfleft`, `halfright`, `halfup`, `halfdown`, `cornerNW`, `cornerSW`, `cornerNE`, `cornerSE`, `center`, `fullscreen`, `expand`, `shrink`.",
+        "desc" : "Move and resize the focused window.",
         "stripped_doc" : [
           "Move and resize the focused window.",
           ""
         ],
-        "parameters" : [
-          " * option - A string specifying the option, valid strings are: `halfleft`, `halfright`, `halfup`, `halfdown`, `cornerNW`, `cornerSW`, `cornerNE`, `cornerSE`, `center`, `fullscreen`, `expand`, `shrink`."
-        ],
-        "doc" : "Move and resize the focused window.\n\nParameters:\n * option - A string specifying the option, valid strings are: `halfleft`, `halfright`, `halfup`, `halfdown`, `cornerNW`, `cornerSW`, `cornerNE`, `cornerSE`, `center`, `fullscreen`, `expand`, `shrink`.",
         "notes" : [
 
         ],
@@ -127,18 +125,18 @@
 
         ],
         "name" : "moveAndResize",
-        "desc" : "Move and resize the focused window."
+        "parameters" : [
+          " * option - A string specifying the option, valid strings are: `halfleft`, `halfright`, `halfup`, `halfdown`, `cornerNW`, `cornerSW`, `cornerNE`, `cornerSE`, `center`, `fullscreen`, `expand`, `shrink`."
+        ]
       },
       {
         "def" : "WinWin:moveToScreen(direction)",
+        "doc" : "Move the focused window between all of the screens in the `direction`.\n\nParameters:\n * direction - A string specifying the direction, valid strings are: `left`, `right`, `up`, `down`, `next`.",
+        "desc" : "Move the focused window between all of the screens in the `direction`.",
         "stripped_doc" : [
           "Move the focused window between all of the screens in the `direction`.",
           ""
         ],
-        "parameters" : [
-          " * direction - A string specifying the direction, valid strings are: `left`, `right`, `up`, `down`, `next`."
-        ],
-        "doc" : "Move the focused window between all of the screens in the `direction`.\n\nParameters:\n * direction - A string specifying the direction, valid strings are: `left`, `right`, `up`, `down`, `next`.",
         "notes" : [
 
         ],
@@ -148,17 +146,17 @@
 
         ],
         "name" : "moveToScreen",
-        "desc" : "Move the focused window between all of the screens in the `direction`."
+        "parameters" : [
+          " * direction - A string specifying the direction, valid strings are: `left`, `right`, `up`, `down`, `next`."
+        ]
       },
       {
         "def" : "WinWin:undo()",
+        "doc" : "Undo the last window manipulation. Only those \"moveAndResize\" manipulations can be undone.",
+        "desc" : "Undo the last window manipulation. Only those \"moveAndResize\" manipulations can be undone.",
         "stripped_doc" : [
           "Undo the last window manipulation. Only those \"moveAndResize\" manipulations can be undone."
         ],
-        "parameters" : [
-
-        ],
-        "doc" : "Undo the last window manipulation. Only those \"moveAndResize\" manipulations can be undone.",
         "notes" : [
 
         ],
@@ -168,17 +166,17 @@
 
         ],
         "name" : "undo",
-        "desc" : "Undo the last window manipulation. Only those \"moveAndResize\" manipulations can be undone."
+        "parameters" : [
+
+        ]
       },
       {
         "def" : "WinWin:redo()",
+        "doc" : "Redo the window manipulation. Only those \"moveAndResize\" manipulations can be undone.",
+        "desc" : "Redo the window manipulation. Only those \"moveAndResize\" manipulations can be undone.",
         "stripped_doc" : [
           "Redo the window manipulation. Only those \"moveAndResize\" manipulations can be undone."
         ],
-        "parameters" : [
-
-        ],
-        "doc" : "Redo the window manipulation. Only those \"moveAndResize\" manipulations can be undone.",
         "notes" : [
 
         ],
@@ -188,17 +186,17 @@
 
         ],
         "name" : "redo",
-        "desc" : "Redo the window manipulation. Only those \"moveAndResize\" manipulations can be undone."
+        "parameters" : [
+
+        ]
       },
       {
         "def" : "WinWin:centerCursor()",
+        "doc" : "Center the cursor on the focused window.",
+        "desc" : "Center the cursor on the focused window.",
         "stripped_doc" : [
           "Center the cursor on the focused window."
         ],
-        "parameters" : [
-
-        ],
-        "doc" : "Center the cursor on the focused window.",
         "notes" : [
 
         ],
@@ -208,22 +206,23 @@
 
         ],
         "name" : "centerCursor",
-        "desc" : "Center the cursor on the focused window."
+        "parameters" : [
+
+        ]
       }
     ],
     "Command" : [
 
     ],
+    "doc" : "Windows manipulation\n\nDownload: [https:\/\/github.com\/Hammerspoon\/Spoons\/raw\/master\/Spoons\/WinWin.spoon.zip](https:\/\/github.com\/Hammerspoon\/Spoons\/raw\/master\/Spoons\/WinWin.spoon.zip)",
     "items" : [
       {
         "def" : "WinWin.gridparts",
+        "doc" : "An integer specifying how many gridparts the screen should be divided into. Defaults to 30.",
+        "desc" : "An integer specifying how many gridparts the screen should be divided into. Defaults to 30.",
         "stripped_doc" : [
           "An integer specifying how many gridparts the screen should be divided into. Defaults to 30."
         ],
-        "parameters" : [
-
-        ],
-        "doc" : "An integer specifying how many gridparts the screen should be divided into. Defaults to 30.",
         "notes" : [
 
         ],
@@ -233,17 +232,17 @@
 
         ],
         "name" : "gridparts",
-        "desc" : "An integer specifying how many gridparts the screen should be divided into. Defaults to 30."
+        "parameters" : [
+
+        ]
       },
       {
         "def" : "WinWin:centerCursor()",
+        "doc" : "Center the cursor on the focused window.",
+        "desc" : "Center the cursor on the focused window.",
         "stripped_doc" : [
           "Center the cursor on the focused window."
         ],
-        "parameters" : [
-
-        ],
-        "doc" : "Center the cursor on the focused window.",
         "notes" : [
 
         ],
@@ -253,18 +252,18 @@
 
         ],
         "name" : "centerCursor",
-        "desc" : "Center the cursor on the focused window."
+        "parameters" : [
+
+        ]
       },
       {
         "def" : "WinWin:moveAndResize(option)",
+        "doc" : "Move and resize the focused window.\n\nParameters:\n * option - A string specifying the option, valid strings are: `halfleft`, `halfright`, `halfup`, `halfdown`, `cornerNW`, `cornerSW`, `cornerNE`, `cornerSE`, `center`, `fullscreen`, `expand`, `shrink`.",
+        "desc" : "Move and resize the focused window.",
         "stripped_doc" : [
           "Move and resize the focused window.",
           ""
         ],
-        "parameters" : [
-          " * option - A string specifying the option, valid strings are: `halfleft`, `halfright`, `halfup`, `halfdown`, `cornerNW`, `cornerSW`, `cornerNE`, `cornerSE`, `center`, `fullscreen`, `expand`, `shrink`."
-        ],
-        "doc" : "Move and resize the focused window.\n\nParameters:\n * option - A string specifying the option, valid strings are: `halfleft`, `halfright`, `halfup`, `halfdown`, `cornerNW`, `cornerSW`, `cornerNE`, `cornerSE`, `center`, `fullscreen`, `expand`, `shrink`.",
         "notes" : [
 
         ],
@@ -274,18 +273,18 @@
 
         ],
         "name" : "moveAndResize",
-        "desc" : "Move and resize the focused window."
+        "parameters" : [
+          " * option - A string specifying the option, valid strings are: `halfleft`, `halfright`, `halfup`, `halfdown`, `cornerNW`, `cornerSW`, `cornerNE`, `cornerSE`, `center`, `fullscreen`, `expand`, `shrink`."
+        ]
       },
       {
         "def" : "WinWin:moveToScreen(direction)",
+        "doc" : "Move the focused window between all of the screens in the `direction`.\n\nParameters:\n * direction - A string specifying the direction, valid strings are: `left`, `right`, `up`, `down`, `next`.",
+        "desc" : "Move the focused window between all of the screens in the `direction`.",
         "stripped_doc" : [
           "Move the focused window between all of the screens in the `direction`.",
           ""
         ],
-        "parameters" : [
-          " * direction - A string specifying the direction, valid strings are: `left`, `right`, `up`, `down`, `next`."
-        ],
-        "doc" : "Move the focused window between all of the screens in the `direction`.\n\nParameters:\n * direction - A string specifying the direction, valid strings are: `left`, `right`, `up`, `down`, `next`.",
         "notes" : [
 
         ],
@@ -295,17 +294,17 @@
 
         ],
         "name" : "moveToScreen",
-        "desc" : "Move the focused window between all of the screens in the `direction`."
+        "parameters" : [
+          " * direction - A string specifying the direction, valid strings are: `left`, `right`, `up`, `down`, `next`."
+        ]
       },
       {
         "def" : "WinWin:redo()",
+        "doc" : "Redo the window manipulation. Only those \"moveAndResize\" manipulations can be undone.",
+        "desc" : "Redo the window manipulation. Only those \"moveAndResize\" manipulations can be undone.",
         "stripped_doc" : [
           "Redo the window manipulation. Only those \"moveAndResize\" manipulations can be undone."
         ],
-        "parameters" : [
-
-        ],
-        "doc" : "Redo the window manipulation. Only those \"moveAndResize\" manipulations can be undone.",
         "notes" : [
 
         ],
@@ -315,17 +314,17 @@
 
         ],
         "name" : "redo",
-        "desc" : "Redo the window manipulation. Only those \"moveAndResize\" manipulations can be undone."
+        "parameters" : [
+
+        ]
       },
       {
         "def" : "WinWin:stash()",
+        "doc" : "Stash current windows's position and size.",
+        "desc" : "Stash current windows's position and size.",
         "stripped_doc" : [
           "Stash current windows's position and size."
         ],
-        "parameters" : [
-
-        ],
-        "doc" : "Stash current windows's position and size.",
         "notes" : [
 
         ],
@@ -335,18 +334,18 @@
 
         ],
         "name" : "stash",
-        "desc" : "Stash current windows's position and size."
+        "parameters" : [
+
+        ]
       },
       {
         "def" : "WinWin:stepMove(direction)",
+        "doc" : "Move the focused window in the `direction` by on step. The step scale equals to the width\/height of one gridpart.\n\nParameters:\n * direction - A string specifying the direction, valid strings are: `left`, `right`, `up`, `down`.",
+        "desc" : "Move the focused window in the `direction` by on step. The step scale equals to the width\/height of one gridpart.",
         "stripped_doc" : [
           "Move the focused window in the `direction` by on step. The step scale equals to the width\/height of one gridpart.",
           ""
         ],
-        "parameters" : [
-          " * direction - A string specifying the direction, valid strings are: `left`, `right`, `up`, `down`."
-        ],
-        "doc" : "Move the focused window in the `direction` by on step. The step scale equals to the width\/height of one gridpart.\n\nParameters:\n * direction - A string specifying the direction, valid strings are: `left`, `right`, `up`, `down`.",
         "notes" : [
 
         ],
@@ -356,18 +355,18 @@
 
         ],
         "name" : "stepMove",
-        "desc" : "Move the focused window in the `direction` by on step. The step scale equals to the width\/height of one gridpart."
+        "parameters" : [
+          " * direction - A string specifying the direction, valid strings are: `left`, `right`, `up`, `down`."
+        ]
       },
       {
         "def" : "WinWin:stepResize(direction)",
+        "doc" : "Resize the focused window in the `direction` by on step.\n\nParameters:\n * direction - A string specifying the direction, valid strings are: `left`, `right`, `up`, `down`.",
+        "desc" : "Resize the focused window in the `direction` by on step.",
         "stripped_doc" : [
           "Resize the focused window in the `direction` by on step.",
           ""
         ],
-        "parameters" : [
-          " * direction - A string specifying the direction, valid strings are: `left`, `right`, `up`, `down`."
-        ],
-        "doc" : "Resize the focused window in the `direction` by on step.\n\nParameters:\n * direction - A string specifying the direction, valid strings are: `left`, `right`, `up`, `down`.",
         "notes" : [
 
         ],
@@ -377,17 +376,17 @@
 
         ],
         "name" : "stepResize",
-        "desc" : "Resize the focused window in the `direction` by on step."
+        "parameters" : [
+          " * direction - A string specifying the direction, valid strings are: `left`, `right`, `up`, `down`."
+        ]
       },
       {
         "def" : "WinWin:undo()",
+        "doc" : "Undo the last window manipulation. Only those \"moveAndResize\" manipulations can be undone.",
+        "desc" : "Undo the last window manipulation. Only those \"moveAndResize\" manipulations can be undone.",
         "stripped_doc" : [
           "Undo the last window manipulation. Only those \"moveAndResize\" manipulations can be undone."
         ],
-        "parameters" : [
-
-        ],
-        "doc" : "Undo the last window manipulation. Only those \"moveAndResize\" manipulations can be undone.",
         "notes" : [
 
         ],
@@ -397,10 +396,11 @@
 
         ],
         "name" : "undo",
-        "desc" : "Undo the last window manipulation. Only those \"moveAndResize\" manipulations can be undone."
+        "parameters" : [
+
+        ]
       }
     ],
-    "doc" : "Windows manipulation\n\nDownload: [https:\/\/github.com\/Hammerspoon\/Spoons\/raw\/master\/Spoons\/WinWin.spoon.zip](https:\/\/github.com\/Hammerspoon\/Spoons\/raw\/master\/Spoons\/WinWin.spoon.zip)",
     "name" : "WinWin"
   }
 ]
