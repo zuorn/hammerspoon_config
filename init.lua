@@ -296,8 +296,8 @@ if spoon.WinWin then
     cmodal:bind('', 'up', '窗口移至上边屏幕', function() spoon.WinWin:stash() spoon.WinWin:moveToScreen("up") end)
     cmodal:bind('', 'down', '窗口移动下边屏幕', function() spoon.WinWin:stash() spoon.WinWin:moveToScreen("down") end)
     cmodal:bind('', 'space', '窗口移至下一个屏幕', function() spoon.WinWin:stash() spoon.WinWin:moveToScreen("next") end)
-    -- ;mcmodal:bind('', 'backspace', '撤销最后一个窗口操作', function() spoon.WinWin:undo() end)
-    -- cmodal:bind('', ']', 'Redo Window Manipulation', function() spoon.WinWin:redo() end)
+--    mcmodal:bind('', 'backspace', '撤销最后一个窗口操作', function() spoon.WinWin:undo() end)
+    cmodal:bind('', 'R', '重做最后一个窗口操作', function() spoon.WinWin:redo() end)
 
     cmodal:bind('', '[', '左三分之二屏', function() spoon.WinWin:stash() spoon.WinWin:moveAndResize("mostleft") end)
     cmodal:bind('', ']', '右三分之二屏', function() spoon.WinWin:stash() spoon.WinWin:moveAndResize("mostright") end)
