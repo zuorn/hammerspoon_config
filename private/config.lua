@@ -34,16 +34,19 @@ hspoon_list = {
 hsapp_list = {
     {key = 'a', name = 'Atom'},
     {key = 'c', id = 'com.google.Chrome'},
-    {key = 'e', name = 'Emacs'},
+    {key = 'e', name = '印象笔记'},
     {key = 'f', name = 'Finder'},
     {key = 'i', name = 'iTerm'},
-    {key = 'k', name = 'KeyCastr'},
-    {key = 'l', name = 'Sublime Text'},
+    {key = 'j', name = 'Typora'},
+    {key = 'k', name = 'Keynote'},
+    {key = 's', name = 'Sublime Text'},
     {key = 'p', name = 'IINA'},
     {key = 's', name = 'Safari'},
     {key = 't', name = 'Terminal'},
     {key = 'v', id = 'com.apple.ActivityMonitor'},
-    {key = 'w', name = 'Mweb'},
+    {key = 'm', name = 'Mweb'},
+    {key = 'w', name = 'WeChat'},
+    {key = 'x', name = '迅雷 2'},
     {key = 'y', id = 'com.apple.systempreferences'},
 }
 
