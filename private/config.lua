@@ -41,7 +41,7 @@ hsapp_list = {
     {key = 'k', name = 'Keynote'},
     {key = 's', name = 'Sublime Text'},
     {key = 'p', name = 'IINA'},
-    {key = 's', name = 'Safari'},
+    {key = 's', name = 'Sublime Text'},
     {key = 't', name = 'Terminal'},
     {key = 'v', id = 'com.apple.ActivityMonitor'},
     {key = 'm', name = 'Mweb'},
