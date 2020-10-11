@@ -98,7 +98,7 @@ hstype_keys = {"alt", "V"}
 hsupervisor_keys = {{"cmd", "shift", "ctrl"}, "Q"}
 
 -- 重新加载配置文件
-hsreload_keys = {{"cmd", "shift", "ctrl"}, "R"}
+-- hsreload_keys = {{"cmd", "shift", "ctrl"}, "R"}
 
 -- 显示各种模式绑定快捷键
 hshelp_keys = {{"alt", "shift"}, "/"}
