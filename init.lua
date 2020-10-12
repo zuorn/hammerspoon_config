@@ -7,12 +7,6 @@
 ----------------------------------------------------------------------------------------------------
 
 
-
-
-
-
-
-
 ----------------------------------------------------------------------------------------------------
 hs.hotkey.alertDuration = 0
 hs.hints.showTitleThresh = 0
@@ -243,7 +237,7 @@ if spoon.CountDown then
         spoon.ModalMgr:deactivate({"countdownM"})
     end)
 
-    -- 定义打开面板快捷键
+    -- 定义打开倒计时面板快捷键
     hscountdM_keys = hscountdM_keys or {"alt", "I"}
     if string.len(hscountdM_keys[2]) > 0 then
         spoon.ModalMgr.supervisor:bind(hscountdM_keys[1], hscountdM_keys[2], "进入倒计时面板", function()
