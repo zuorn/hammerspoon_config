@@ -44,7 +44,7 @@ hsapp_list = {
     {key = 'p', name = 'IINA'},
     {key = 't', name = 'Terminal'},
     -- {key = 'v', id = 'com.apple.ActivityMonitor'},
-    {key = 'v', id = 'Visual Studio Code'},
+    {key = 'v', id = 'vsCode.app'},
     {key = 'm', name = 'Mweb'},
     {key = 'w', name = 'WeChat'},
     {key = 'x', name = '迅雷 2'},
