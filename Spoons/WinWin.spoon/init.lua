@@ -20,10 +20,11 @@ obj.history = {}
 --- WinWin.gridparts
 --- Variable
 --- An integer specifying how many gridparts the screen should be divided into. Defaults to 30.
-obj.gridparts = 30
+-- obj.gridparts = 30
+obj.gridparts = 40
 
 --- WinWin:stepMove(direction)
---- Method
+--- Methodm
 --- Move the focused window in the `direction` by on step. The step scale equals to the width/height of one gridpart.
 ---
 --- Parameters:
