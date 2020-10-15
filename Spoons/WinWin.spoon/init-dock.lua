@@ -20,10 +20,11 @@ obj.history = {}
 --- WinWin.gridparts
 --- Variable
 --- An integer specifying how many gridparts the screen should be divided into. Defaults to 30.
-obj.gridparts = 30
+-- obj.gridparts = 30
+obj.gridparts = 40
 
 --- WinWin:stepMove(direction)
---- Method
+--- Methodm
 --- Move the focused window in the `direction` by on step. The step scale equals to the width/height of one gridpart.
 ---
 --- Parameters:
@@ -138,41 +139,43 @@ function obj:moveAndResize(option)
         local steph = cres.h/obj.gridparts
         local wf = cwin:frame()
         if option == "halfleft" then
-            cwin:setFrame({x=cres.x, y=cres.y, w=cres.w/2, h=cres.h})
+            cwin:setFrame({x=cres.x +50, y=cres.y, w=cres.w/2 -25, h=cres.h})
         elseif option == "halfright" then
-            cwin:setFrame({x=cres.x+cres.w/2, y=cres.y, w=cres.w/2, h=cres.h})
+            cwin:setFrame({x=cres.x +25+cres.w/2, y=cres.y, w=cres.w/2 -25, h=cres.h})
 
 
         -- 定义  lesshalfleft、onethird、lesshalfright
         elseif option == "lesshalfleft" then
-            cwin:setFrame({x=cres.x, y=cres.y, w=cres.w/3, h=cres.h})
+            cwin:setFrame({x=cres.x +50, y=cres.y, w=cres.w/3 - 50/3 , h=cres.h})
         elseif option == "onethird" then
-            cwin:setFrame({x=cres.x+cres.w/3, y=cres.y, w=cres.w/3, h=cres.h})
+            cwin:setFrame({x=cres.x +50/3*2 +cres.w/3, y=cres.y, w=cres.w/3 - 50/3 , h=cres.h})
         elseif option == "lesshalfright" then
-            cwin:setFrame({x=cres.x+cres.w/3*2, y=cres.y, w=cres.w/3, h=cres.h})
+            cwin:setFrame({x=cres.x +50/3 +cres.w/3*2, y=cres.y, w=cres.w/3 - 50/3, h=cres.h})
         
         -- 定义 mostleft、mostright
         elseif option == "mostleft" then
-            cwin:setFrame({x=cres.x, y=cres.y, w=cres.w/3*2, h=cres.h})
+            cwin:setFrame({x=cres.x +50, y=cres.y, w=cres.w/3 *2 -50/3*2, h=cres.h})
         elseif option == "mostright" then
-            cwin:setFrame({x=cres.x+cres.w/3, y=cres.y, w=cres.w/3*2, h=cres.h})
+            cwin:setFrame({x=cres.x +50/3*2+cres.w/3, y=cres.y, w=cres.w/3 *2 -50/3*2, h=cres.h})
 
             
             
         elseif option == "halfup" then
-            cwin:setFrame({x=cres.x, y=cres.y, w=cres.w, h=cres.h/2})
+            cwin:setFrame({x=cres.x +50, y=cres.y, w=cres.w, h=cres.h/2})
         elseif option == "halfdown" then
-            cwin:setFrame({x=cres.x, y=cres.y+cres.h/2, w=cres.w, h=cres.h/2})
+            cwin:setFrame({x=cres.x +50, y=cres.y+cres.h/2, w=cres.w, h=cres.h/2})
+
         elseif option == "cornerNW" then
-            cwin:setFrame({x=cres.x, y=cres.y, w=cres.w/2, h=cres.h/2})
+            cwin:setFrame({x=cres.x +50, y=cres.y, w=cres.w/2 -50, h=cres.h/2})
         elseif option == "cornerNE" then
-            cwin:setFrame({x=cres.x+cres.w/2, y=cres.y, w=cres.w/2, h=cres.h/2})
+            cwin:setFrame({x=cres.x +50+cres.w/2, y=cres.y, w=cres.w/2 -50, h=cres.h/2})
         elseif option == "cornerSW" then
-            cwin:setFrame({x=cres.x, y=cres.y+cres.h/2, w=cres.w/2, h=cres.h/2})
+            cwin:setFrame({x=cres.x +50, y=cres.y+cres.h/2, w=cres.w/2 -50, h=cres.h/2})
         elseif option == "cornerSE" then
-            cwin:setFrame({x=cres.x+cres.w/2, y=cres.y+cres.h/2, w=cres.w/2, h=cres.h/2})
+            cwin:setFrame({x=cres.x +50+cres.w/2, y=cres.y+cres.h/2, w=cres.w/2 -50, h=cres.h/2})
+
         elseif option == "fullscreen" then
-            cwin:setFrame({x=cres.x, y=cres.y, w=cres.w, h=cres.h})
+            cwin:setFrame({x=cres.x +50, y=cres.y, w=cres.w, h=cres.h})
         elseif option == "center" then
             cwin:centerOnScreen()
         elseif option == "expand" then
@@ -290,7 +293,7 @@ function obj:centerCursor()
         hs.mouse.setAbsolutePosition({x=wf.x+wf.w/2, y=wf.y+wf.h/2})
     else
         -- Center the cursor on the screen
-        hs.mouse.setAbsolutePosition({x=cres.x+cres.w/2, y=cres.y+cres.h/2})
+        hs.mouse.setAbsolutePosition({x=cres.x +50+cres.w/2, y=cres.y+cres.h/2})
     end
 end
 

@@ -1,13 +1,13 @@
---- === ModalMgr ===
+---=== ModalMgr ===
 ---
---- Modal keybindings environment management. Just an wrapper of `hs.hotkey.modal`.
+---模式绑定环境管理。只是“ hs.hotkey.modal”的包装。
 ---
---- Download: [https://github.com/Hammerspoon/Spoons/raw/master/Spoons/ModalMgr.spoon.zip](https://github.com/Hammerspoon/Spoons/raw/master/Spoons/ModalMgr.spoon.zip)
+---下载：[https://github.com/Hammerspoon/Spoons/raw/master/Spoons/ModalMgr.spoon.zip](https://github.com/Hammerspoon/Spoons/raw/master/Spoons/ModalMgr .spoon.zip）
 
 local obj = {}
 obj.__index = obj
 
--- Metadata
+-- 元数据
 obj.name = "ModalMgr"
 obj.version = "1.0"
 obj.author = "ashfinal <ashfinal@gmail.com>"
@@ -43,24 +43,24 @@ function obj:init()
     }
 end
 
---- ModalMgr:new(id)
---- Method
---- Create a new modal keybindings environment
+---ModalMgr：new（id）
+ --方法
+---创建一个新的模式键绑定环境
 ---
---- Parameters:
----  * id - A string specifying ID of new modal keybindings
+---参数：
+---*id-一个字符串，指定新的模式键绑定的ID
 
 function obj:new(id)
     obj.modal_list[id] = hs.hotkey.modal.new()
 end
 
---- ModalMgr:toggleCheatsheet([idList], [force])
---- Method
---- Toggle the cheatsheet display of current modal environments's keybindings.
+---ModalMgr：toggleCheatsheet（[idList]，[force]）
+ --方法
+---切换当前模态环境的按键绑定的备忘单显示。
 ---
---- Parameters:
----  * iterList - An table specifying IDs of modal environments or active_list. Optional, defaults to all active environments.
----  * force - A optional boolean value to force show cheatsheet, defaults to `nil` (automatically).
+---参数：
+---*iterList-一个指定模态环境或active_list的ID的表。可选，默认为所有活动环境。
+---*force-强制显示备忘单的可选布尔值，默认为`nil'（自动）。
 
 function obj:toggleCheatsheet(iterList, force)
     if obj.which_key:isShowing() and not force then
@@ -126,14 +126,14 @@ function obj:toggleCheatsheet(iterList, force)
     end
 end
 
---- ModalMgr:activate(idList, [trayColor], [showKeys])
---- Method
---- Activate all modal environment in `idList`.
+---ModalMgr：activate（idList，[trayColor]，[showKeys]）
+ --方法
+---在`idList`中激活所有模态环境。
 ---
---- Parameters:
----  * idList - An table specifying IDs of modal environments
----  * trayColor - An optional string (e.g. #000000) specifying the color of modalTray, defaults to `nil`.
----  * showKeys - A optional boolean value to show all available keybindings, defaults to `nil`.
+---参数：
+---*idList-指定模态环境的ID的表
+---*trayColor-可选字符串（例如＃000000），用于指定modalTray的颜色，默认为`nil'。
+---*showKeys-一个可选的布尔值，用于显示所有可用的键绑定，默认为`nil`。
 
 function obj:activate(idList, trayColor, showKeys)
     for _, val in ipairs(idList) do
@@ -158,12 +158,12 @@ function obj:activate(idList, trayColor, showKeys)
     end
 end
 
---- ModalMgr:deactivate(idList)
---- Method
---- Deactivate modal environments in `idList`.
+---ModalMgr：deactivate（idList）
+ --方法
+---停用`idList`中的模态环境。
 ---
---- Parameters:
----  * idList - An table specifying IDs of modal environments
+---参数：
+---*idList-指定模态环境的ID的表
 
 function obj:deactivate(idList)
     for _, val in ipairs(idList) do
@@ -177,9 +177,9 @@ function obj:deactivate(idList)
     obj.which_key:hide()
 end
 
---- ModalMgr:deactivateAll()
---- Method
---- Deactivate all active modal environments.
+---ModalMgr：deactivateAll（）
+ --方法
+---停用所有活动的模态环境。
 ---
 
 function obj:deactivateAll()

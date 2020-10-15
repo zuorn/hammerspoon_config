@@ -20,10 +20,11 @@ hspoon_list = {
     "WinWin",
     "VolumeScroll",
     "PopupTranslateSelection",
+    "DeepLTranslate"
     --"SpeedMenu",
-    "MouseCircle",
-    "MountedVolumes",
-    "HeadphoneAutoPause",
+    -- "MouseCircle",
+    -- "MountedVolumes",
+    -- "HeadphoneAutoPause",
 }
 
 ----------------------------------------------------------------------------------------------------
@@ -90,6 +91,9 @@ hstype_keys = {"alt", "V"}
 
 -- 显示 Hammerspoon 控制台
 --hsconsole_keys = {"alt", "Z"}
+
+-- 显示 MountedVolumes 
+hstype_keys = {"alt", "M"}
 
 
 ----------------------------------------------------------------------------------------------------

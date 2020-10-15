@@ -16,6 +16,7 @@ hs.window.animationDuration = 0
 ------------------------------------------ 配置设置 -------------------------------------------------
 -- 配置文件
 -- 使用自定义配置 （如果存在的话）
+----------------------------------------------------------------------------------------------------
 custom_config = hs.fs.pathToAbsolute(os.getenv("HOME") .. '/.config/hammerspoon/private/config.lua')
 if custom_config then
     print("加载自定义配置文件。")
@@ -48,24 +49,24 @@ end
 
 ----------------------------------------------------------------------------------------------------
 ---------------------------------------- Spoons 加载项 ----------------------------------------------
+----------------------------------------------------------------------------------------------------
 -- 加载 Spoon
 hs.loadSpoon("ModalMgr")
 
 -- 定义默认加载的 Spoons
 if not hspoon_list then
     hspoon_list = {
-        "AClock",
-        "ClipShow",
-        "KSheet",
-        "CountDown",
-        "WinWin",
-        "FnMate",
-        "VolumeScroll",
-        "PopupTranslateSelection",
-        "SpeedMenu",
-        "MountedVolumes",
-        "MouseCircle",
-        "HeadphoneAutoPause",
+        "AClock", -- 一个钟
+        "ClipShow", -- 剪切板
+        "KSheet", -- 快捷键
+        "CountDown", -- 倒计时
+        "WinWin", -- 窗口管理
+        "FnMate", -- 模拟鼠标
+        -- "VolumeScroll", -- 鼠标滚轮调节音量
+        "PopupTranslateSelection", -- 翻译选中文本
+        "SpeedMenu", -- 菜单栏显示网速
+        "MountedVolumes", -- 显示已安装卷的饼图
+        "HeadphoneAutoPause", -- 断开耳机自动暂停播放
     }
 end
 
@@ -78,6 +79,7 @@ end
 -- 定义各种模式快捷键绑定
 ----------------------------------------------------------------------------------------------------
 -- 定义 windowHints 快捷键
+----------------------------------------------------------------------------------------------------
 hswhints_keys = hswhints_keys or {"alt", "tab"}
 if string.len(hswhints_keys[2]) > 0 then
     spoon.ModalMgr.supervisor:bind(hswhints_keys[1], hswhints_keys[2], 'WindowHints 快速切换应用', function()
@@ -90,6 +92,7 @@ end
 ----------------------------------------------------------------------------------------------------
 --------------------------------------- appM 快速打开应用 ---------------------------------------------
 -- appM 模式 快速打开应用
+----------------------------------------------------------------------------------------------------
 spoon.ModalMgr:new("appM")
 local cmodal = spoon.ModalMgr.modal_list["appM"]
 cmodal:bind('', 'escape', '退出 ', function() spoon.ModalMgr:deactivate({"appM"}) end)
@@ -123,7 +126,9 @@ end
 
 
 
+----------------------------------------------------------------------------------------------------
 -- 绑定快捷键
+----------------------------------------------------------------------------------------------------
 hsappM_keys = hsappM_keys or {"alt", "A"}
 if string.len(hsappM_keys[2]) > 0 then
     spoon.ModalMgr.supervisor:bind(hsappM_keys[1], hsappM_keys[2], " 进入 AppM 模式，快速打开应用", function()
@@ -135,6 +140,7 @@ end
 ----------------------------------------------------------------------------------------------------
 ---------------------------------------- clipshowM 配置 ---------------------------------------------
 -- clipshowM 剪切板配置
+----------------------------------------------------------------------------------------------------
 if spoon.ClipShow then
     spoon.ModalMgr:new("clipshowM")
     local cmodal = spoon.ModalMgr.modal_list["clipshowM"]
@@ -201,6 +207,7 @@ end
 
 ----------------------------------------------------------------------------------------------------
 -- 在浏览器中打开 Hammerspoon API 手册
+----------------------------------------------------------------------------------------------------
 hsman_keys = hsman_keys or {"alt", "H"}
 if string.len(hsman_keys[2]) > 0 then
     spoon.ModalMgr.supervisor:bind(hsman_keys[1], hsman_keys[2], "查看 Hammerspoon 手册", function()
@@ -212,6 +219,7 @@ end
 
 ----------------------------------------------------------------------------------------------------
 -- countdownM 倒计时配置
+----------------------------------------------------------------------------------------------------
 if spoon.CountDown then
     spoon.ModalMgr:new("countdownM")
     local cmodal = spoon.ModalMgr.modal_list["countdownM"]
@@ -250,6 +258,7 @@ end
 
 ----------------------------------------------------------------------------------------------------
 -- 锁屏
+----------------------------------------------------------------------------------------------------
 hslock_keys = hslock_keys or {"alt", "L"}
 if string.len(hslock_keys[2]) > 0 then
     spoon.ModalMgr.supervisor:bind(hslock_keys[1], hslock_keys[2], "锁屏", function()
@@ -259,6 +268,7 @@ end
 
 ----------------------------------------------------------------------------------------------------
 -- 窗口管理
+----------------------------------------------------------------------------------------------------
 if spoon.WinWin then
     spoon.ModalMgr:new("resizeM")
     local cmodal = spoon.ModalMgr.modal_list["resizeM"]
@@ -315,6 +325,7 @@ end
 
 ----------------------------------------------------------------------------------------------------
 -- 绑定 KSheet 面板 快捷键
+----------------------------------------------------------------------------------------------------
 if spoon.KSheet then
     spoon.ModalMgr:new("cheatsheetM")
     local cmodal = spoon.ModalMgr.modal_list["cheatsheetM"]
@@ -340,15 +351,25 @@ end
 
 ----------------------------------------------------------------------------------------------------
 -- 绑定 AClock 快捷键
+----------------------------------------------------------------------------------------------------
 if spoon.AClock then
     hsaclock_keys = hsaclock_keys or {"alt", "T"}
     if string.len(hsaclock_keys[2]) > 0 then
         spoon.ModalMgr.supervisor:bind(hsaclock_keys[1], hsaclock_keys[2], "时钟", function() spoon.AClock:toggleShow() end)
     end
 end
+--
+----------------------------------------------------------------------------------------------------
+--  绑定 PopupTranslateSelection 快捷键
+----------------------------------------------------------------------------------------------------
+-- 弹出选中词的翻译面板
+-- esc 退出翻译面板
+-- return 键复制翻译结果
+
 
 ----------------------------------------------------------------------------------------------------
 -- 粘贴浏览器最前置的标题和地址
+----------------------------------------------------------------------------------------------------
 hstype_keys = hstype_keys or {"alt", "V"}
 if string.len(hstype_keys[2]) > 0 then
     spoon.ModalMgr.supervisor:bind(hstype_keys[1], hstype_keys[2], "粘贴浏览器最前置页面标题和地址", function()
