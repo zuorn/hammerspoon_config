@@ -156,8 +156,10 @@ function obj:moveAndResize(option)
             cwin:setFrame({x=cres.x, y=cres.y, w=cres.w/3*2, h=cres.h})
         elseif option == "mostright" then
             cwin:setFrame({x=cres.x+cres.w/3, y=cres.y, w=cres.w/3*2, h=cres.h})
-
-            
+        
+        -- 定义 centermost
+        elseif option == "centermost" then
+            cwin:setFrame({x=cres.x+cres.w/3/2, y=cres.y, w=cres.w/3*2, h=cres.h})
             
         elseif option == "halfup" then
             cwin:setFrame({x=cres.x, y=cres.y, w=cres.w, h=cres.h/2})
