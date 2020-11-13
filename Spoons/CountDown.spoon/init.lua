@@ -115,10 +115,13 @@ function obj:setProgress(progress, notifystr)
         canvasCleanup()
         if notifystr then
             hs.notify.new({
-                title = "Time(" .. notifystr .. " mins) is up!",
-                informativeText = "Now is " .. os.date("%X")
+                title = "倒计时(" .. notifystr .. " 分钟) 已经结束！!",
+                informativeText = " 现在的时间是： " .. os.date("%X")
             }):send()
         end
+        -- 倒计时结束后锁屏
+        hs.caffeinate.lockScreen()
+
     else
         obj.canvas[1].frame.w = tostring(progress)
         obj.canvas[2].frame.x = tostring(progress)

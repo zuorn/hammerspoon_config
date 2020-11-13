@@ -132,7 +132,7 @@ cp ~/.hammerspoon/config-example.lua ~/.hammerspoon/private/config.lua
 ####  可自定义范围：
 * 指定要启用模块
 
-    找到配置文件启用模块，注释对应模块可禁止用对应功能。
+*  找到配置文件启用模块，注释对应模块可禁止用对应功能。
 
 * 绑定快速启动 app 及快捷键
 * 自定义模式快捷键

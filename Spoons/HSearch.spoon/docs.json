@@ -1,0 +1,75 @@
+[
+  {
+    "Command": [],
+    "Constant": [],
+    "Constructor": [],
+    "Deprecated": [],
+    "Field": [],
+    "Function": [],
+    "Method": [
+      {
+        "def": "HSearch:loadSources()",
+        "desc": "Load new sources from `HSearch.search_path`, the search_path defaults to `~/.hammerspoon/private/hsearch_dir` and the HSearch Spoon directory. Only for debug purpose in usual.",
+        "doc": "Load new sources from `HSearch.search_path`, the search_path defaults to `~/.hammerspoon/private/hsearch_dir` and the HSearch Spoon directory. Only for debug purpose in usual.\n",
+        "name": "loadSources",
+        "signature": "HSearch:loadSources()",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "HSearch:switchSource()",
+        "desc": "Tigger new source according to hs.chooser's query string and keyword. Only for debug purpose in usual.",
+        "doc": "Tigger new source according to hs.chooser's query string and keyword. Only for debug purpose in usual.\n",
+        "name": "switchSource",
+        "signature": "HSearch:switchSource()",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "HSearch:toggleShow()",
+        "desc": "Toggle the display of HSearch",
+        "doc": "Toggle the display of HSearch\n",
+        "name": "toggleShow",
+        "signature": "HSearch:toggleShow()",
+        "stripped_doc": "",
+        "type": "Method"
+      }
+    ],
+    "Variable": [],
+    "desc": "Hammerspoon Search",
+    "doc": "Hammerspoon Search\n\nDownload: [https://github.com/Hammerspoon/Spoons/raw/master/Spoons/HSearch.spoon.zip](https://github.com/Hammerspoon/Spoons/raw/master/Spoons/HSearch.spoon.zip)",
+    "items": [
+      {
+        "def": "HSearch:loadSources()",
+        "desc": "Load new sources from `HSearch.search_path`, the search_path defaults to `~/.hammerspoon/private/hsearch_dir` and the HSearch Spoon directory. Only for debug purpose in usual.",
+        "doc": "Load new sources from `HSearch.search_path`, the search_path defaults to `~/.hammerspoon/private/hsearch_dir` and the HSearch Spoon directory. Only for debug purpose in usual.\n",
+        "name": "loadSources",
+        "signature": "HSearch:loadSources()",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "HSearch:switchSource()",
+        "desc": "Tigger new source according to hs.chooser's query string and keyword. Only for debug purpose in usual.",
+        "doc": "Tigger new source according to hs.chooser's query string and keyword. Only for debug purpose in usual.\n",
+        "name": "switchSource",
+        "signature": "HSearch:switchSource()",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "HSearch:toggleShow()",
+        "desc": "Toggle the display of HSearch",
+        "doc": "Toggle the display of HSearch\n",
+        "name": "toggleShow",
+        "signature": "HSearch:toggleShow()",
+        "stripped_doc": "",
+        "type": "Method"
+      }
+    ],
+    "name": "HSearch",
+    "stripped_doc": "\nDownload: [https://github.com/Hammerspoon/Spoons/raw/master/Spoons/HSearch.spoon.zip](https://github.com/Hammerspoon/Spoons/raw/master/Spoons/HSearch.spoon.zip)",
+    "submodules": [],
+    "type": "Module"
+  }
+]

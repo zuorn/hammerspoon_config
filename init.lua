@@ -51,6 +51,7 @@ end
 ---------------------------------------- Spoons 加载项 ----------------------------------------------
 ----------------------------------------------------------------------------------------------------
 -- 加载 Spoon
+----------------------------------------------------------------------------------------------------
 hs.loadSpoon("ModalMgr")
 
 -- 定义默认加载的 Spoons
@@ -61,12 +62,12 @@ if not hspoon_list then
         "KSheet", -- 快捷键
         "CountDown", -- 倒计时
         "WinWin", -- 窗口管理
-        "FnMate", -- 模拟鼠标
         "VolumeScroll", -- 鼠标滚轮调节音量
         "PopupTranslateSelection", -- 翻译选中文本
         "SpeedMenu", -- 菜单栏显示网速
         "MountedVolumes", -- 显示已安装卷的饼图
         "HeadphoneAutoPause", -- 断开耳机自动暂停播放
+        "HSearch"
     }
 end
 
@@ -139,7 +140,6 @@ end
 
 ----------------------------------------------------------------------------------------------------
 ---------------------------------------- clipshowM 配置 ---------------------------------------------
--- clipshowM 剪切板配置
 ----------------------------------------------------------------------------------------------------
 if spoon.ClipShow then
     spoon.ModalMgr:new("clipshowM")
@@ -226,8 +226,8 @@ if spoon.CountDown then
     cmodal:bind('', 'escape', '退出面板', function() spoon.ModalMgr:deactivate({"countdownM"}) end)
     cmodal:bind('', 'Q', '退出面板', function() spoon.ModalMgr:deactivate({"countdownM"}) end)
     --cmodal:bind('', 'tab', 'Toggle Cheatsheet', function() spoon.ModalMgr:toggleCheatsheet() end)
-    cmodal:bind('', '0', '5 分钟', function()
-        spoon.CountDown:startFor(5)
+    cmodal:bind('', '0', '1 分钟', function()
+        spoon.CountDown:startFor(1)
         spoon.ModalMgr:deactivate({"countdownM"})
     end)
     for i = 1, 9 do
@@ -291,10 +291,17 @@ if spoon.WinWin then
     cmodal:bind('', 'C', '居中', function() spoon.WinWin:stash() spoon.WinWin:moveAndResize("center") end)
     cmodal:bind('', '=', '窗口方法', function() spoon.WinWin:moveAndResize("expand") end, nil, function() spoon.WinWin:moveAndResize("expand") end)
     cmodal:bind('', '-', '窗口缩小', function() spoon.WinWin:moveAndResize("shrink") end, nil, function() spoon.WinWin:moveAndResize("shrink") end)
+
     cmodal:bind('ctrl', 'H', '向左收缩窗口', function() spoon.WinWin:stepResize("left") end, nil, function() spoon.WinWin:stepResize("left") end)
     cmodal:bind('ctrl', 'L', '向右扩展窗口', function() spoon.WinWin:stepResize("right") end, nil, function() spoon.WinWin:stepResize("right") end)
     cmodal:bind('ctrl', 'K', '向上收缩窗口', function() spoon.WinWin:stepResize("up") end, nil, function() spoon.WinWin:stepResize("up") end)
     cmodal:bind('ctrl', 'J', '向下扩镇窗口', function() spoon.WinWin:stepResize("down") end, nil, function() spoon.WinWin:stepResize("down") end)
+
+    -- cmodal:bind('shift', 'H', '向左收缩窗口', function() spoon.WinWin:stepResize("rleft") end, nil, function() spoon.WinWin:stepResize("left") end)
+    -- cmodal:bind('shift', 'L', '向右扩展窗口', function() spoon.WinWin:stepResize("rright") end, nil, function() spoon.WinWin:stepResize("right") end)
+    -- cmodal:bind('shift', 'K', '向上收缩窗口', function() spoon.WinWin:stepResize("rup") end, nil, function() spoon.WinWin:stepResize("up") end)
+    -- cmodal:bind('shift', 'J', '向下扩镇窗口', function() spoon.WinWin:stepResize("rdown") end, nil, function() spoon.WinWin:stepResize("down") end)
+
     cmodal:bind('', 'left', '窗口移至左边屏幕', function() spoon.WinWin:stash() spoon.WinWin:moveToScreen("left") end)
     cmodal:bind('', 'right', '窗口移至右边屏幕', function() spoon.WinWin:stash() spoon.WinWin:moveToScreen("right") end)
     cmodal:bind('', 'up', '窗口移至上边屏幕', function() spoon.WinWin:stash() spoon.WinWin:moveToScreen("up") end)
@@ -303,6 +310,7 @@ if spoon.WinWin then
     cmodal:bind('', 'B', '撤销最后一个窗口操作', function() spoon.WinWin:undo() end)
     cmodal:bind('', 'R', '重做最后一个窗口操作', function() spoon.WinWin:redo() end)
     cmodal:bind('', 'G', '左三分之二屏', function() spoon.WinWin:stash() spoon.WinWin:moveAndResize("centermost") end)
+    cmodal:bind('', 'V', '展示显示', function() spoon.WinWin:stash() spoon.WinWin:moveAndResize("show") end)
     cmodal:bind('', '[', '左三分之二屏', function() spoon.WinWin:stash() spoon.WinWin:moveAndResize("mostleft") end)
     cmodal:bind('', ']', '右三分之二屏', function() spoon.WinWin:stash() spoon.WinWin:moveAndResize("mostright") end)
     cmodal:bind('', ',', '左三分之一屏', function() spoon.WinWin:stash() spoon.WinWin:moveAndResize("lesshalfleft") end)
@@ -383,8 +391,23 @@ if string.len(hstype_keys[2]) > 0 then
     end)
 end
 
+
+
+----------------------------------------------------------------------------------------------------
+-- Hammerspoon 搜索 
+----------------------------------------------------------------------------------------------------
+if spoon.HSearch then
+    hsearch_keys = hsearch_keys or {"alt", "G"}
+    if string.len(hsearch_keys[2]) > 0 then
+        spoon.ModalMgr.supervisor:bind(hsearch_keys[1], hsearch_keys[2], '启动 Hammerspoon 搜索', function() spoon.HSearch:toggleShow() end)
+    end
+end
+
+
+
 ----------------------------------------------------------------------------------------------------
 -- 快捷显示 Hammerspoon 控制台
+----------------------------------------------------------------------------------------------------
 hsconsole_keys = hsconsole_keys or {"alt", "Z"}
 if string.len(hsconsole_keys[2]) > 0 then
     spoon.ModalMgr.supervisor:bind(hsconsole_keys[1], hsconsole_keys[2], "打开 Hammerspoon 控制台", function() hs.toggleConsole() end)

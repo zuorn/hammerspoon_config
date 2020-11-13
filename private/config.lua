@@ -21,8 +21,9 @@ hspoon_list = {
     "VolumeScroll",
     "PopupTranslateSelection",
     "DeepLTranslate"
+    -- "HSaria2"
+    -- "HSearch"
     --"SpeedMenu",
-    -- "MouseCircle",
     -- "MountedVolumes",
     -- "HeadphoneAutoPause",
 }
@@ -42,7 +43,7 @@ hsapp_list = {
     {key = 'o', name = 'Obsidian'},
     {key = 'k', name = 'Keynote'},
     {key = 's', name = 'Sublime Text'},
-    {key = 'p', name = 'IINA'},
+    {key = 'p', name = 'Podcasts'},
     {key = 't', name = 'Terminal'},
     -- {key = 'v', id = 'com.apple.ActivityMonitor'},
     {key = 'v', id = 'vsCode.app'},
@@ -51,8 +52,6 @@ hsapp_list = {
     {key = 'x', name = '迅雷 2'},
     {key = 'y', id = 'com.apple.systempreferences'},
 }
-
-
 
 
 ----------------------------------------------------------------------------------------------------
@@ -90,11 +89,13 @@ hsaclock_keys = {"alt", "T"}
 hstype_keys = {"alt", "V"}
 
 -- 显示 Hammerspoon 控制台
---hsconsole_keys = {"alt", "Z"}
+hsconsole_keys = {"alt", "Z"}
 
 -- 显示 MountedVolumes 
 hstype_keys = {"alt", "M"}
 
+-- 显示搜索
+hsearch_keys = {"alt", "G"} 
 
 ----------------------------------------------------------------------------------------------------
 --------------------------------- hammerspoon 快捷键绑定配置  -----------------------------------------
@@ -103,7 +104,7 @@ hstype_keys = {"alt", "M"}
 hsupervisor_keys = {{"cmd", "shift", "ctrl"}, "Q"}
 
 -- 重新加载配置文件
--- hsreload_keys = {{"cmd", "shift", "ctrl"}, "R"}
+hsreload_keys = {{"cmd", "shift", "ctrl"}, "R"}
 
 -- 显示各种模式绑定快捷键
 hshelp_keys = {{"alt", "shift"}, "/"}
