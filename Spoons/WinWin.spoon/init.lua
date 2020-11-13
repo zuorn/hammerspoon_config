@@ -162,6 +162,7 @@ function obj:moveAndResize(option)
             cwin:setFrame({x=cres.x+cres.w/3/2, y=cres.y, w=cres.w/3*2, h=cres.h})
             
         -- 定义 show 
+        -- 宽度为24 分之 22
         elseif option == "show" then
             cwin:setFrame({x=cres.x+cres.w/3/2/2/2, y=cres.y, w=cres.w/24*22, h=cres.h})
             
