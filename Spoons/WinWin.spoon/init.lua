@@ -169,7 +169,11 @@ function obj:moveAndResize(option)
         -- 定义 shows
         elseif option == "shows" then
             cwin:setFrame({x=cres.x+cres.w/3/2/2, y=cres.y, w=cres.w/12*10, h=cres.h})
-            
+         
+        -- 定义 center-2 
+        elseif option == "center-2" then
+            cwin:setFrame({x=cres.x+cres.w/2/2, y=cres.y, w=cres.w/2, h=cres.h})
+             
         elseif option == "halfup" then
             cwin:setFrame({x=cres.x, y=cres.y, w=cres.w, h=cres.h/2})
         elseif option == "halfdown" then
