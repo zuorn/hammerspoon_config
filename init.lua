@@ -298,10 +298,6 @@ if spoon.WinWin then
     cmodal:bind('ctrl', 'K', '向上收缩窗口', function() spoon.WinWin:stepResize("up") end, nil, function() spoon.WinWin:stepResize("up") end)
     cmodal:bind('ctrl', 'J', '向下扩镇窗口', function() spoon.WinWin:stepResize("down") end, nil, function() spoon.WinWin:stepResize("down") end)
 
-    -- cmodal:bind('shift', 'H', '向左收缩窗口', function() spoon.WinWin:stepResize("rleft") end, nil, function() spoon.WinWin:stepResize("left") end)
-    -- cmodal:bind('shift', 'L', '向右扩展窗口', function() spoon.WinWin:stepResize("rright") end, nil, function() spoon.WinWin:stepResize("right") end)
-    -- cmodal:bind('shift', 'K', '向上收缩窗口', function() spoon.WinWin:stepResize("rup") end, nil, function() spoon.WinWin:stepResize("up") end)
-    -- cmodal:bind('shift', 'J', '向下扩镇窗口', function() spoon.WinWin:stepResize("rdown") end, nil, function() spoon.WinWin:stepResize("down") end)
 
     cmodal:bind('', 'left', '窗口移至左边屏幕', function() spoon.WinWin:stash() spoon.WinWin:moveToScreen("left") end)
     cmodal:bind('', 'right', '窗口移至右边屏幕', function() spoon.WinWin:stash() spoon.WinWin:moveToScreen("right") end)
