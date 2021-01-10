@@ -20,7 +20,7 @@ hspoon_list = {
     "WinWin",
     "VolumeScroll",
     "PopupTranslateSelection",
-    "DeepLTranslate"
+    -- "DeepLTranslate"
     -- "HSaria2"
     -- "HSearch"
     --"SpeedMenu",

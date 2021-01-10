@@ -63,7 +63,7 @@ if not hspoon_list then
         "CountDown", -- 倒计时
         "WinWin", -- 窗口管理
         "VolumeScroll", -- 鼠标滚轮调节音量
-        "PopupTranslateSelection", -- 翻译选中文本
+        -- "PopupTranslateSelection", -- 翻译选中文本
         "SpeedMenu", -- 菜单栏显示网速
         "MountedVolumes", -- 显示已安装卷的饼图
         "HeadphoneAutoPause", -- 断开耳机自动暂停播放
