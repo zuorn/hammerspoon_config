@@ -14,7 +14,7 @@ brew cask install hammerspoon
 ```
 git clone https://github.com/zuorn/hammerspoon_config ~/.hammerspoon
 ```
-重新加载配置文件即可生效。
+**重新加载配置文件即可生效**。
 
 如果提示：already exists and is not an empty directory.
 先删除目录
@@ -49,9 +49,14 @@ cd ~/.hammerspoon && git pull
 * 使用 `H、J、K、L` 向左/下增减窗口大小
 * 使用方向键 `上、下、左、右` 移动到相应方向上的显示器（多块显示器的话）
 * 使用 `[,]` 左三分之二屏和右三分之二屏
-* 使用 `空格` 将窗口投送到另外一块屏幕（假如有两块以上显示器的话）
+* 使用 `space` 将窗口投送到另外一块屏幕（假如有两块以上显示器的话）
 * 使用 `t` 光标移动到所在窗口的中间位置
 * 使用 `tab` 显示帮助面板，查看键位图
+* 使用 `G` 左三分之二居中分屏 
+* 使用 `Z` 展示显示 
+* 使用 `V` 编程显示 
+* 使用 `t` 将光标移至所在窗口的中心位置 
+* 使用 `X` 三分之一居中分屏 
 
 
 ![](http://ww4.sinaimg.cn/large/006tNc79ly1g4pz9dhogwj31c00u04aw.jpg) 
@@ -105,6 +110,7 @@ cd ~/.hammerspoon && git pull
 ![剪切板](https://i.loli.net/2019/07/06/5d201937266fe84053.png)
 
 功能：
+
 * 保存会话
 * 恢复上一个会话
 * 在浏览器中打开
@@ -130,22 +136,15 @@ cp ~/.hammerspoon/config-example.lua ~/.hammerspoon/private/config.lua
 按照注释编辑私有配置文件 `~/.hammerspoon/private/config.lua` 即可。
 
 ####  可自定义范围：
+
 * 指定要启用模块
-
 *  找到配置文件启用模块，注释对应模块可禁止用对应功能。
-
 * 绑定快速启动 app 及快捷键
 * 自定义模式快捷键
 * 自定义 hammerspoon 快捷键绑定
-
-
 
 
 ## 参考：
 
 * [Hammerspoon Spoons](https://www.hammerspoon.org/Spoons/)
 * [awesome-hammerspoon](https://github.com/ashfinal/awesome-hammerspoon)
-
-
-
-
