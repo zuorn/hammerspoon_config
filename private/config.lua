@@ -38,7 +38,7 @@ hsapp_list = {
     {key = 'c', id = 'com.google.Chrome'},
     {key = 'e', name = '印象笔记'},
     {key = 'f', name = 'Finder'},
-    {key = 'i', name = 'iTerm'},
+    {key = 'i', name = 'Alacritty'},
     {key = 'j', name = 'Typora'},
     {key = 'o', name = 'Obsidian'},
     {key = 'k', name = 'Keynote'},
