@@ -72,12 +72,10 @@ cd ~/.hammerspoon && git pull
 
 
 ### KSheet - 展示应用快捷键
+
 按下快捷键 `Option` + `s` 展示当前应用快捷键，按 `q` 或者 `esc` 退出。
 
 ![应用快捷键](https://i.loli.net/2019/07/06/5d2019381760e52911.png)
-
-
-
 
 
 ### 快速启动
@@ -87,8 +85,8 @@ cd ~/.hammerspoon && git pull
 ![启动器](https://i.loli.net/2019/07/06/5d2019368b6dc67355.png)
 
 
-
 ### AClock - 显示当前时间
+
 按下 `Option` + `t` 显示当前时间。
 
 ![时钟](https://i.loli.net/2019/07/06/5d201936dbfdf69558.png)
@@ -103,8 +101,8 @@ cd ~/.hammerspoon && git pull
 ![倒计时](https://i.loli.net/2019/07/06/5d2019372da4545679.png)
 
 
-
 ### clipshowM 剪切板
+
 按下 `Option` + `c` 打开剪切板面板。
 
 ![剪切板](https://i.loli.net/2019/07/06/5d201937266fe84053.png)
@@ -133,6 +131,7 @@ cd ~/.hammerspoon && git pull
 ```
 cp ~/.hammerspoon/config-example.lua ~/.hammerspoon/private/config.lua
 ```
+
 按照注释编辑私有配置文件 `~/.hammerspoon/private/config.lua` 即可。
 
 ####  可自定义范围：
