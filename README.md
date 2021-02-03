@@ -1,4 +1,4 @@
-# hammerspoon_config 
+# [hammerspoon-config](hammerspoon-config) 
 
 
 > 本配置基于 vim 风格，实现了窗口管理，剪切板，倒计时，快速启动等功能。所有模式按照指定快捷键进入，所有模式都可以用 `esc` 或 `q`退出。在进入对应模式之前只有模式快捷键生效，进入对应模式之后此模式的操作快捷键生效。

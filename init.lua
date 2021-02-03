@@ -422,6 +422,7 @@ end
 ----------------------------------------------------------------------------------------------------
 -- 初始化 modalMgr
 ----------------------------------------------------------------------------------------------------
+
 spoon.ModalMgr.supervisor:enter()
 
 
@@ -429,4 +430,33 @@ spoon.ModalMgr.supervisor:enter()
 -- VimMode 
 ----------------------------------------------------------------------------------------------------
 
+-- local VimMode = hs.loadSpoon('VimMode')
+-- local vim = VimMode:new()
+--
+-- -- Binding jk to enter normal mode
+-- vim:enterWithSequence('jk')
+--
+-- -- Binding a single keystroke to enter normal mode
+-- vim:bindHotKeys({ enter = {{'ctrl'}, ';'} })
+--
+--
+-- -- sometimes you need to check Activity Monitor to get the app's
+-- -- real name
+-- vim:disableForApp('Code')
+-- vim:disableForApp('Sublime Text')
+-- vim:disableForApp('vsCode')
+-- vim:disableForApp('Alacritty')
+-- vim:disableForApp('iTerm')
+-- vim:disableForApp('MacVim')
+-- vim:disableForApp('Terminal')
+--
+-- -- Block cursor mode
+-- vim:enableBetaFeature('block_cursor_overlay')
+--
+--
+-- -- Enabling screen dim when you enter normal mode
+-- vim:shouldDimScreenInNormalMode(true)
 
+----------------------------------------------------------------------------------------------------
+-------------------------------------------- End ---------------------------------------------------
+----------------------------------------------------------------------------------------------------
