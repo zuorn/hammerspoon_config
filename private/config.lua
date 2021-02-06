@@ -34,11 +34,11 @@ hspoon_list = {
 -- 绑定 启动 app 快捷键
 
 hsapp_list = {
-    {key = 'a', name = 'Atom'},
+    {key = 'a', name = 'Alacritty'},
     {key = 'c', id = 'com.google.Chrome'},
     {key = 'e', name = '印象笔记'},
     {key = 'f', name = 'Finder'},
-    {key = 'i', name = 'Alacritty'},
+    {key = 'i', name = 'kitty'},
     {key = 'j', name = 'Typora'},
     {key = 'o', name = 'Obsidian'},
     {key = 'k', name = 'Keynote'},

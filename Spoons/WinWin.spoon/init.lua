@@ -159,16 +159,16 @@ function obj:moveAndResize(option)
         
         -- 定义 centermost
         elseif option == "centermost" then
-            cwin:setFrame({x=cres.x+cres.w/3/2, y=cres.y, w=cres.w/3*2, h=cres.h})
+            cwin:setFrame({x=cres.x+cres.w/3/2, y=cres.h/96, w=cres.w/3*2, h=cres.h})
             
         -- 定义 show 
         -- 宽度为24 分之 22
          elseif option == "show" then
-            cwin:setFrame({x=cres.x+cres.w/3/2/2/2/2, y=cres.y, w=cres.w/48*46, h=cres.h})
+            cwin:setFrame({x=cres.x+cres.w/3/2/2/2/2, y=cres.h/96, w=cres.w/48*46, h=cres.h})
         
         -- 定义 shows
         elseif option == "shows" then
-            cwin:setFrame({x=cres.x+cres.w/3/2/2, y=cres.y, w=cres.w/12*10, h=cres.h})
+            cwin:setFrame({x=cres.x+cres.w/3/2/2, y=cres.h/96, w=cres.w/12*10, h=cres.h})
          
         -- 定义 center-2 
         elseif option == "center-2" then
