@@ -2,7 +2,7 @@
 
 -- author: zuorn
 -- mail: zuorn@qq.com
--- github: https://github.com/zuorn/hammerspoon_config 
+-- github: https://github.com/zuorn/hammerspoon_config
 
 ----------------------------------------------------------------------------------------------------
 
@@ -15,7 +15,6 @@ hspoon_list = {
     "AClock",
     "ClipShow",
     "CountDown",
-    "FnMate",
     "KSheet",
     "WinWin",
     "VolumeScroll",
@@ -91,11 +90,11 @@ hstype_keys = {"alt", "V"}
 -- 显示 Hammerspoon 控制台
 hsconsole_keys = {"alt", "Z"}
 
--- 显示 MountedVolumes 
+-- 显示 MountedVolumes
 hstype_keys = {"alt", "M"}
 
 -- 显示搜索
-hsearch_keys = {"alt", "G"} 
+hsearch_keys = {"alt", "G"}
 
 ----------------------------------------------------------------------------------------------------
 --------------------------------- hammerspoon 快捷键绑定配置  -----------------------------------------

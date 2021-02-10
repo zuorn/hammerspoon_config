@@ -2,7 +2,7 @@
 
 -- author: zuorn
 -- mail: zuorn@qq.com
--- github: https://github.com/zuorn/hammerspoon_config 
+-- github: https://github.com/zuorn/hammerspoon_config
 
 ----------------------------------------------------------------------------------------------------
 
@@ -297,7 +297,7 @@ if spoon.WinWin then
     cmodal:bind('', 'Z', '展示显示', function() spoon.WinWin:stash() spoon.WinWin:moveAndResize("show") end)
     cmodal:bind('', 'V', '编辑显示', function() spoon.WinWin:stash() spoon.WinWin:moveAndResize("shows") end)
 
-   cmodal:bind('', 'X', '二分之一居中分屏', function() spoon.WinWin:stash() spoon.WinWin:moveAndResize("center-2") end)
+    cmodal:bind('', 'X', '二分之一居中分屏', function() spoon.WinWin:stash() spoon.WinWin:moveAndResize("center-2") end)
 
     cmodal:bind('', '=', '窗口放大', function() spoon.WinWin:moveAndResize("expand") end, nil, function() spoon.WinWin:moveAndResize("expand") end)
     cmodal:bind('', '-', '窗口缩小', function() spoon.WinWin:moveAndResize("shrink") end, nil, function() spoon.WinWin:moveAndResize("shrink") end)
@@ -400,7 +400,7 @@ end
 
 
 ----------------------------------------------------------------------------------------------------
--- Hammerspoon 搜索 
+-- Hammerspoon 搜索
 ----------------------------------------------------------------------------------------------------
 if spoon.HSearch then
     hsearch_keys = hsearch_keys or {"alt", "G"}
@@ -426,36 +426,6 @@ end
 spoon.ModalMgr.supervisor:enter()
 
 
-----------------------------------------------------------------------------------------------------
--- VimMode  测试
-----------------------------------------------------------------------------------------------------
-
--- local VimMode = hs.loadSpoon('VimMode')
--- local vim = VimMode:new()
---
--- -- Binding jk to enter normal mode
--- vim:enterWithSequence('jk')
---
--- -- Binding a single keystroke to enter normal mode
--- vim:bindHotKeys({ enter = {{'ctrl'}, ';'} })
---
---
--- -- sometimes you need to check Activity Monitor to get the app's
--- -- real name
--- vim:disableForApp('Code')
--- vim:disableForApp('Sublime Text')
--- vim:disableForApp('vsCode')
--- vim:disableForApp('Alacritty')
--- vim:disableForApp('iTerm')
--- vim:disableForApp('MacVim')
--- vim:disableForApp('Terminal')
---
--- -- Block cursor mode
--- vim:enableBetaFeature('block_cursor_overlay')
---
---
--- -- Enabling screen dim when you enter normal mode
--- vim:shouldDimScreenInNormalMode(true)
 
 ----------------------------------------------------------------------------------------------------
 -------------------------------------------- End ---------------------------------------------------
