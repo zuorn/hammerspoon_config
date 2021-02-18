@@ -48,7 +48,7 @@ hsapp_list = {
     {key = 'b', id = 'vsCode.app'},
     {key = 'm', name = 'Mweb'},
     {key = 'w', name = 'WeChat'},
-    {key = 'x', name = '迅雷 2'},
+    {key = 'x', name = 'Thunder'},
     {key = 'y', id = 'com.apple.systempreferences'},
 }
 
